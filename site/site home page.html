@@ -1,0 +1,365 @@
+<html>
+<head>
+    <title>
+    sai protifolio</title>
+    <link rel="icon" href="icons/home%20icon.png"/>
+    <style>
+   
+        body{
+             /* For browsers that do not support gradients */
+  background-image: linear-gradient(to bottom right, skyblue, black);
+            padding:0;
+            margin:0;
+        }
+        .header{
+            position:relative;
+            border: 1px solid white;
+            height:20%;
+            background-image:linear-gradient(to right,orange,black);
+            border-radius:10px;
+            margin:0;
+            padding:0;
+            overflow:hidden;
+        }
+        .header img{
+        position: absolute;
+            width:50px;
+            height;50px;
+        top: 40px;
+        right: 40px;
+}
+        .myimage{
+            transition:3s;
+            
+        }
+        
+        .myimage:hover{
+            top:0;
+            right:10px;
+            width:200px;
+            height:200px; 
+            transform: rotate3d(20deg);
+            
+            
+            
+        }
+        
+        .intro{
+position:absolute;
+        
+        top:30px;
+        right:100px;
+        transition:3s;
+        
+            color:white;
+         }
+        .intro:hover{
+            top:30px;
+        right:170px;
+            text-shadow:10px 10px 6px black;
+        }
+        
+         ul{
+            padding:0;
+            margin:0;
+            background-color:darkslategrey;
+            overflow:hidden;
+             border-radius:10px;
+             display: flex;
+  align-items: center;
+
+             
+        }
+        li{
+            float:left;
+           list-style:none;
+            
+
+            
+        }
+        
+        li a{
+            text-decoration: none;
+            padding:10px;
+            color:white;
+            display:inline-block;
+            display: flex;
+  align-items: center;
+
+            
+            
+        }
+        
+        li a:hover ,.dropdown:hover .drop{
+            background-color: aliceblue;
+            color:black;
+        }
+        li .dropdown{
+            display: inline-block;
+            
+        }
+        
+        .dropdown-content{
+            position: absolute;
+            background-color:aliceblue;
+           border-radius: 10px;
+            display: none;
+           
+        }
+        
+        .dropdown-content a{
+           
+            text-align: center;
+            color: black;
+            display: block;
+            
+        }
+        
+        .dropdown:hover .dropdown-content{
+            display: block;
+            
+            background-color: lightgray;
+        }
+        .drop{
+            display: inline-block;
+        }
+        .home{
+            background-color: aliceblue;
+            
+        }
+        .home a{
+            color:black;
+        }
+        .about{
+           float:right; 
+        }
+        
+        #about{
+float:right;
+        }
+        .scroll-bar{
+            width:100%;
+            height:20%;
+            background-color:transparent;
+        }
+        .left{
+width:70%;
+        float:left;}
+        .card{
+background-color:azure;
+            padding:20px;
+            padding-top:10px;
+            margin:2px;
+            border-radius:10px;
+        }
+        
+        .right{
+            width:30%;
+            height:100%;
+            float:left;
+             
+        }
+        #footer a{
+color:white;
+    text-decoration:none;
+        }
+        @media screen and (max-width:800px){
+            .right,.left{
+                width:100%;
+                padding:0;
+            }
+        }     
+        @media screen and (max-width:400px){
+            .top-nav,.header{
+                float:none;
+                width:100%;
+            }
+        }
+        .footer{
+            text-align:center;
+            text-decoration: underline;
+        }
+        .footer a{
+            color:azure;
+            text-decoration:none;
+            transition: 2s;
+        }
+        
+        .footer a:hover{
+           letter-spacing: 10px; 
+        }
+        #prot{
+transition: 1s;
+            position:absolute;
+            left:1px;
+        }
+        
+        #prot:hover{
+            letter-spacing:3px;
+            left:30px;
+            text-shadow:10px 10px 6px black;
+        }
+        
+        #skills{
+            transition: 1s;
+            position:absolute;
+            left:1px;
+            top:60px;
+            
+        }
+        #skills:hover{
+            letter-spacing:3px;
+            left:30px;
+            text-decoration:underline;
+            text-shadow:10px 10px 6px black;
+        }
+        .button{
+            background-color:;
+            border-radius:10px;
+            transition: 3s;
+        }
+        
+        .button:hover{
+            box-shadow: 20px 10px 10px black;
+            outline: black 2px solid;
+            
+        }
+        .btn{
+            border:1px solid black;
+            border-radius:10px;
+            color:black;
+            background-color:green;
+            color:white;
+            text-decoration:none;
+                }
+        .btn:hover{
+            background-color:red;
+            color:white;
+        }
+        
+        
+        
+        
+    </style>
+    </head>
+<body>
+    
+    <div class="header">
+        <div class="name">
+    <h1 style="text-decoration:underline;" id="prot">MY PROTIFOLIO</h1>
+        <h3 id="skills">SKILLS  AND  PROJECTS</h3>
+        </div>
+        <div class="intro">
+        <h6>M.BALA SAI SUBRAHMANYAM</h6>
+        <h6 style="letter-spacing:3px">DEVELOPER</h6>
+        </div>
+        <img src="C:\Users\sai69\Desktop\DSC_0021.JPG"  style="border-radius:150px; outline: orange solid 2px; " class="myimage">
+        </div>
+    <div class="top-nav">
+    <ul>
+    <li class="home"><a href="#"><img src="icons/home%20icon.png" height="20px" width="19px"; style="margin-right:3px;">HOME</a></li>
+    <li><a href="#"><img src="icons/creative-thinking.png" height="20px" width="20px"; style="margin-right:3px;">SKILLS</a></li>
+    <li class="dropdown"><a href="#" class="drop"><img src="icons/certificate.png" height="20px" width="20px"; style="margin-right:3px;">CERTIFICATE</a>
+        <div class="dropdown-content">
+        <a href="#">SQL</a>
+        <a href="#">JAVA</a>
+        <a href="#">HTML</a>
+        <a href="#">CSS</a>
+        <a href="#">JAVA SCRIPT</a>
+        </div>
+        </li>
+     <li class="dropdown"><a href="#"><img src="icons/contact-mail.png" height="20px" width="20px"; style="margin-right:3px;">CONTACT</a>
+        <div class="dropdown-content">
+        <a href="#"><img src="icons/instagram.png" height="20px" width="20px"; style="margin-right:3px;">@INSTAGRAM</a>
+        <a href="#">@FACEBOOK</a>
+        <a href="#">@LINKEDIN</a>
+        <a href="#">@MAIL</a>
+        <a href="#">@TWITTER</a>
+        <a href="#">@WHATSAPP</a>
+        </div>
+        </li>
+    <li><a href="comments%20page.html" target="_blank"><img src="icons/comment.png" height="20px" width="20px"; style="margin-right:3px;">COMMENTS</a></li>
+    <li class="about"><a href="#"><img src="icons/info.png" height="20px" width="20px"; style="margin-right:3px;">ABOUT</a></li>
+    </ul>
+    </div>
+    <div class="scroll-bar">
+        <div class="card">scroll bar</div>
+    
+    </div> <div class="scroll-bar">
+        <div class="card">IFRAMES
+    <iframe src="welcomepage.html" height="100%" width="100%" name="img" ></iframe>
+           
+   <a href="welcomepage.html" target="img" class="btn">welcome</a>
+            
+            <a href="comments%20page.html" target="img" class="btn">COURSE</a>
+       
+    </div>
+    
+    </div>
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    
+    <div class="left">
+     <div class="skills">
+        
+        <div class="card">
+         <h4>SKILLS</h4>
+            I LEARNED MY CODING SKILLS IN W3 SCHOOLS AND SOLOLEARN.
+            I TALENTED IN HTML,CSS,JAVA SCRIPT AND JAVA.
+            <div class="img">
+          <img src="PicsArt_05-24-05.50.03.jpg" height="200px" width="100%"></div>
+         </div>
+        </div>
+        <br/>
+        
+        <div class="html">
+        <div class="card">
+            <h4>HTML</h4>
+            <p>IN THIS SECTION WE DISCUSS ABOUT MY SKILL AND KNOWLEDGE IN HTML LANGUAGE WHICH IS THE STRUCTURED OF A WEBSITE</p>
+            
+            <div class="img"> <img src="PicsArt_05-24-05.50.03.jpg" height="200px" width="100%"></div>
+            </div> 
+        </div>
+        <br/>
+        <div class="css">
+        <div class="card">
+            <h4>CSS</h4>
+            <p>IN THIS SECTION WE DISCUSS ABOUT THE CSS (CASCADING STYLE SHEET) HOW MUCHI GAINED KNWOLEDGE IN THIS COURSE WE SEE IT</p>
+            
+            <div class="img">
+             <img src="PicsArt_05-24-05.50.03.jpg" height="200px" width="100%"></div></div>
+        </div>
+    <br/>
+    </div>
+    
+    <div class="right">
+        <div class="card">
+        <h4>MY RESSUME</h4>
+        <p>HERE I ATTACHED MY RESSUME DOWNLOAD HERE BY CLICKING HERE</p> <button type="button" class="button"><a href="C:\Users\sai69\Desktop\SELF\FRONT END\HTML\my protifolio\site\RESUME2.pdf" style="text-decoration: none;color:black;font-size:17px;" target="_blank">DOWNLOAD</a></button>
+        <div class="img"> # upload an image#</div>
+        </div>
+        <br/>
+    <div class="card">
+        <h4>LINKED IN</h4>
+        <p>HERE I ATTACHED MY LINKED IN URL(UNIFORN RESOURCE LOCATOR) YOU CAN CONACT ME ON THAT ALSO</p>
+        <div class="img"> # upload an image#</div>
+        </div>
+        <br/>
+    <div class="card">
+        <h4>YOUTUBE</h4>
+        <p>HERE I ATTACHED MY LINKED IN URL(UNIFORN RESOURCE LOCATOR) YOU CAN CONACT ME ON THAT ALSO</p>
+        <div class="img"> # upload an image#</div>
+        </div>
+    </div>
+    
+    <div class="footer">
+        PLEASE FEEL FREE TO CONTACT ME IN MAIL-<strong><a href="mailto:saisubrahamanyam789@gmail.com">SAISUBRAHMANYAM789@GMAIL.COM</a></strong>
+    
+</div>
+ 
+    
+    
+    </body>
+</html>
